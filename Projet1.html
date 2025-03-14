@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web</title>
+    <title>Ma Page Web Améliorée</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #00796b;
             color: white;
-            padding: 15px;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
         }
         section {
             margin: 20px;
@@ -22,15 +34,39 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
+        footer {
+            background-color: #00796b;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma page web</h1>
+        <h1>Bienvenue sur ma page web améliorée</h1>
     </header>
-    <section>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
         <h2>À propos</h2>
-        <p>Ceci est une page web simple créée avec HTML et CSS.</p>
+        <p>Ceci est une page web améliorée avec un menu de navigation et un pied de page.</p>
     </section>
+    <section id="services">
+        <h2>Nos Services</h2>
+        <p>Nous offrons divers services web et de développement.</p>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@example.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Ma Page Web. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
